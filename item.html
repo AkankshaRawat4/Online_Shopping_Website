@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Page</title>
+    <link rel="stylesheet" href="item.css">
+</head>
+<body>
+    <!-- Item Page -->
+    <div class="itemPage">
+        <div class="itemImage">
+            <img id="itemImg" src="" alt="Product Image">
+        </div>
+        <div class="itemDetails">
+            <h1 id="itemTitle">Product Name</h1>
+            <h2 id="itemPrice">Price</h2>
+            <p id="itemDesc">Description of the product goes here.</p>
+            <p><strong>Available Offers:</strong></p>
+            <ul>
+                <li>Special Price: Get extra 13% off (price inclusive of cashback/coupon)</li>
+                <li>Bank Offer: ₹15 off on UPI Transaction</li>
+                <li>Bank Offer: Flat ₹200 off on HDFC Bank Credit/Debit</li>
+                <li>Exclusive Offer: Additional discounts on festive sale</li>
+            </ul>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <div class="buttonContainer">
+                <a href="index.html" class="backButton">Back</a>
+                <a id="buyBtn" class="buyButton" href="buyPage.html">Buy Now</a>
+            </div> 
+        </div>
+    </div>
+
+    <!-- HOT SALE Section -->
+    <section class="hotSale">
+        <h2>🔥 HOT SALE 🔥</h2>
+        <div class="hotSaleGrid">
+            <!-- Hot Sale Item 1 -->
+            <div class="hotSaleItem">
+                <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="Hot Sale Product">
+                <h3>PS England Shoes</h3>
+                <p class="price">$29.99 <span class="originalPrice">$37.24</span></p>
+                <a href="item.html?product=shoes" class="viewDetails">View Details</a>
+            </div>
+            <!-- Hot Sale Item 2 -->
+            <div class="hotSaleItem">
+                <img src="https://i.postimg.cc/76X9ZV8m/Screenshot_from_2022-06-03_18-45-12.png" alt="Hot Sale Product">
+                <h3>PS England Jacket</h3>
+                <p class="price">$14.99 <span class="originalPrice">$17.24</span></p>
+                <a href="item.html?product=jacket" class="viewDetails">View Details</a>
+            </div>
+            <!-- Hot Sale Item 3 -->
+            <div class="hotSaleItem">
+                <img src="https://i.postimg.cc/j2FhzSjf/bs2.png" alt="Hot Sale Product">
+                <h3>PS England Shirt</h3>
+                <p class="price">$21.99 <span class="originalPrice">$27.24</span></p>
+                <a href="item.html?product=shirt" class="viewDetails">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="item.js"></script>
+</body>
+</html>

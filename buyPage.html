@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyPage</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+<div class="buyPage" id="buyPage">
+    <div class="content">
+        <div class="header">
+            <h2>Order Details</h2>
+            <i class="fa-solid fa-xmark close-btn" id="closeBtn"></i>
+        </div>
+        <div class="body">
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+                </div>
+              
+            </form>
+        </div>
+        <div class="footer">
+            <button class="cancel-btn" id="cancelBtn">Cancel</button>
+            <button class="confirm-btn" id="confirmOrderBtn">Confirm Order</button>
+        </div>
+    </div>
+</div>
+    
+    <script src="buy.js"></script>
+</body>
+</html>
